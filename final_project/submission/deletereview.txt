@@ -1,0 +1,12 @@
+Command:
+
+message                     reviews
+-------                     -------
+Review deleted successfully        
+
+
+Output:
+
+message                     reviews
+-------                     -------
+Review deleted successfully        

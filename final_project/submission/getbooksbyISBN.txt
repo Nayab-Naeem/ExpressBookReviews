@@ -1,0 +1,8 @@
+Command:
+Invoke-RestMethod -Uri "http://localhost:5000/"
+Output:
+
+author        title             review
+                                s     
+------        -----             ------
+Chinua Achebe Things Fall Apart       

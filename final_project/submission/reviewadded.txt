@@ -1,0 +1,9 @@
+Command:
+Invoke-RestMethod -Method PUT `
+-Uri "http://localhost:5000/customer/auth/review/1?review=Great%20book" `
+-WebSession $session
+Output:
+message                           revi
+                                  ews 
+-------                           ----
+Review added/updated successfully @...

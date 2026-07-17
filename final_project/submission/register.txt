@@ -1,0 +1,7 @@
+Command:
+Invoke-RestMethod -Method POST `
+-Uri "http://localhost:5000/register" `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"username":"Nayab","password":"1234"}'
+Output:
+User registered successfully

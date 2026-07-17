@@ -1,0 +1,10 @@
+Command:
+Invoke-RestMethod -Method POST `
+-Uri "http://localhost:5000/customer/login" `
+-Headers @{"Content-Type"="application/json"} `
+-Body '{"username":"Nayab","password":"1234"}'
+Output:
+message                     accessToke
+                            n         
+-------                     ----------
+User successfully logged in eyJhbGc...
