@@ -1,10 +1,2 @@
-Command:
-Invoke-RestMethod -Method POST `
--Uri "http://localhost:5000/customer/login" `
--Headers @{"Content-Type"="application/json"} `
--Body '{"username":"Nayab","password":"1234"}'
-Output:
-message                     accessToke
-                            n         
--------                     ----------
-User successfully logged in eyJhbGc...
+curl -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "{\"username\":\"Nayab123\",\"password\":\"1234\"}"
+{"message":"User successfully logged in","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5heWFiMTIzIiwiaWF0IjoxNzg0NDEzMzM0LCJleHAiOjE3ODQ0MTY5MzR9.b4yM-fqBnvGR-M2p2vqZdry3pc1L7KyEkzs2uLSX61U"}

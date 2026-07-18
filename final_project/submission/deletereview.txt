@@ -1,11 +1,2 @@
-Command:
-
-Invoke-RestMethod -Method DELETE `
--Uri "http://localhost:5000/customer/auth/review/1" `
--WebSession $session
-
-Output:
-
-message                     reviews
--------                     -------
-Review deleted successfully
+curl -b cookies.txt -X DELETE http://localhost:5000/customer/auth/review/1
+{"message":"Review deleted successfully","reviews":{}}

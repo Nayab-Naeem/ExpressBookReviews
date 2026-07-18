@@ -1,9 +1,4 @@
-Command:
-Invoke-RestMethod -Method PUT `
--Uri "http://localhost:5000/customer/auth/review/1?review=Great%20book" `
--WebSession $session
-Output:
-message                           revi
-                                  ews 
--------                           ----
-Review added/updated successfully @...
+>curl -c cookies.txt -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d "{\"username\":\"Nayab123\",\"password\":\"1234\"}"
+{"message":"User successfully logged in","accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5heWFiMTIzIiwiaWF0IjoxNzg0NDEzMzg3LCJleHAiOjE3ODQ0MTY5ODd9._7PC7Z1K0s_lFevLZFJsXcrpWckk46xRrp6-5rvIly8"}
+C:\Users\User>curl -b cookies.txt -X PUT "http://localhost:5000/customer/auth/review/1?review=Excellent%20Book"
+{"message":"Review added/updated successfully","reviews":{"Nayab123":"Excellent Book"}}

@@ -1,5 +1,2 @@
-Command:
-Invoke-RestMethod -Uri "http://localhost:5000/review/1"
-
-Output:
+ curl.exe http://localhost:5000/review/1
 {}
