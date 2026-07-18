@@ -1,0 +1,11 @@
+Command:
+
+curl https://api.github.com/repos/Nayab-Naeem/ExpressBookReviews
+
+Output:
+
+Repository:
+https://github.com/Nayab-Naeem/ExpressBookReviews
+
+Fork Status:
+Forked from ibm-developer-skills-network/expressBookReviews
