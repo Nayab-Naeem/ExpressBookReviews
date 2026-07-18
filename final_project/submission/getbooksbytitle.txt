@@ -1,9 +1,5 @@
 Command:
-author        title             review
-                                s     
-------        -----             ------
-Chinua Achebe Things Fall Apart       
-
+Invoke-RestMethod -Uri "http://localhost:5000/title/Things%20Fall%20Apart"
 
 Output:
 
